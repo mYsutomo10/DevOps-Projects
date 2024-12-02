@@ -18,11 +18,7 @@ netstat -i
 
 # List of Processes by CPU Usage
 echo -e "\nProcesses by CPU Usage:"
-ps -eo pid,comm,%cpu --sort=-%cpu
-
-# List of Processes by Memory Usage
-echo -e "\nProcesses by Memory Usage:"
-ps -eo pid,comm,%mem --sort=-%mem
+ps -eo pid,comm,%cpu,%mem
 
 # Load Average
 echo -e "\nLoad Average (1/5/15 min):"
