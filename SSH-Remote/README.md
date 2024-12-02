@@ -91,6 +91,3 @@ Fail2Ban is a security tool designed to protect servers from unauthorized access
   ```
   sudo fail2ban-client status sshd
   ```
-
-### Project URL
-https://roadmap.sh/projects/ssh-remote-server-setup
