@@ -65,7 +65,7 @@ Shows the number of failed login attempts.
 echo -e "\nFailed Login Attempts:"
 grep "Failed password" /var/log/auth.log 2>/dev/null | wc -l || echo "Log file not accessible or not available."
 ```
-###Final Look
+### Final Look
 ```
 #!/bin/bash
 
