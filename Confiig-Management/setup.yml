@@ -4,8 +4,10 @@
   vars:
     pub_key_path: /path/to/pub-key.pub
     git_repo_url: ""
+    app_deploy_dir: /var/www/html
+    docker_image_name: app-image-name
+    docker_container_name: app-container-name
   roles:
     - {role: base, tags: ["base"]}
-    - {role: nginx, tags: ["nginx"]}
     - {role: app, tags: ["app"]}
     - {role: ssh, tags: ["ssh"]}
