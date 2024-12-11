@@ -17,7 +17,7 @@
       - fail2ban
     state: present
 
-- name: configue fail2ban
+- name: configure fail2ban
   copy:
     src: /etc/fail2ban/jail.conf
     dest: /etc/fail2ban/jail.local
@@ -29,3 +29,14 @@
   service:
     name: fail2ban
     state: restarted
+
+- name: install nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: start and enable nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
