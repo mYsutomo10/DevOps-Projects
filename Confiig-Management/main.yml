@@ -9,6 +9,7 @@
       - curl
       - git
       - nano
+      - docker.io
     state: present
 
 - name: Install fail2ban
@@ -29,17 +30,6 @@
   service:
     name: fail2ban
     state: restarted
-
-- name: install nginx
-  apt:
-    name: nginx
-    state: present
-
-- name: start and enable nginx
-  service:
-    name: nginx
-    state: started
-    enabled: yes
 
 - name: clone repo from GitHub
   git: "{{git_repo_url}}"
