@@ -40,3 +40,26 @@
     name: nginx
     state: started
     enabled: yes
+
+- name: clone repo from GitHub
+  git: "{{git_repo_url}}"
+  dest: "{{app_deploy_dir}}"
+  update: yes
+
+- name: build docker image
+  command: |
+    docker build -t {{docke_image_name}} {{app_deploy_dir}}
+
+- name: run docker image
+  docker container:
+    name: "{{docker_container_name}}"
+    image: "{{docker_image_name}}"
+    state: started
+    restart_policy: always
+    ports: "80:80"
+
+- name: add pub key to authorized_keys
+  authorized_key:
+  user: username
+  state: present
+  key: "{{look('file', pub_key_path)}}"
