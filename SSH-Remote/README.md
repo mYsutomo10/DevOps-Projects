@@ -1,4 +1,4 @@
-## <u>Remote Linux Server Setup on AWS with SSH Access</u>
+# <u>Remote Linux Server Setup on AWS with SSH Access</u>
 This project demonstrates how to set up a remote Linux server on Amazon Web Services (AWS) and configure secure SSH access for remote management. The guide covers the entire process, from launching an EC2 instance to establishing a secure connection using SSH.
 
 ## <u>Built With</u>
