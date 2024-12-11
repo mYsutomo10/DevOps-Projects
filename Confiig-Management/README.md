@@ -35,7 +35,7 @@ To run all roles:
 ```
 ansible-playbook setup.yml
 ```
-To run a spesific role (ex: app):
+To run a spesific role (e.g., ssh):
 ```
-ansible-playbook setup.yml --tags "app"
+ansible-playbook setup.yml --tags "ssh"
 ```
