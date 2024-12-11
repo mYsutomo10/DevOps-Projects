@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  vars:
+    pub_key_path: /path/to/pub-key.pub
+    git_repo_url: ""
+  roles:
+    - {role: base, tags: ["base"]}
+    - {role: nginx, tags: ["nginx"]}
+    - {role: app, tags: ["app"]}
+    - {role: ssh, tags: ["ssh"]}
