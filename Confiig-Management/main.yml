@@ -1,0 +1,12 @@
+- name: Update and upgrade apt packages
+  apt:
+    update_caches: yes
+    upgrade: dist
+
+- name: Install basic utilities
+  apt:
+    name:
+      - curl
+      - git
+      - nano
+    state: present
