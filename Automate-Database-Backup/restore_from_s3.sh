@@ -2,7 +2,7 @@
 
 DB_NAME="dbname"
 RESTORE_DIR="/tmp/mongo_restore"
-S3_BUCKET_NAME="bucket_name"
+S3_BUCKET_NAME="backup-bucket"
 AWS_REGION="ap-southeast-1"
 
 
