@@ -4,7 +4,7 @@ DB_NAME="dbname"
 BACKUP_DIR="/tmp/mongo_backups"
 TIMESTAMP=$(date "Y-%m-%d_%H-%M-%S")
 BACKUP_FILE="${BACKUP_DIR}/${DB_NAME}_${TIMESTAMP}.tar.gz"
-S3_BUCKET_NAME="bucket_name"
+S3_BUCKET_NAME="backup-bucket"
 AWS_REGION="ap-southeast-1"
 
 mkdir -p $BACKUP_DIR
