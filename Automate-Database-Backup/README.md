@@ -63,7 +63,7 @@ aws s3api create-bucket --bucket backup-bucket
   ```
   crontab -e
   ```
-- add this line to run the script foor every 24 hours
+- add this line to run the script for every 24 hours
   ```
   0 0 * * * /backup_to_s3.sh
   ```
