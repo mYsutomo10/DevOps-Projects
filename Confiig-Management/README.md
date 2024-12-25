@@ -15,7 +15,7 @@ This project demonstrates the basics of configuration management using Ansible. 
 
 ## <u>Features</u>
 ### Base Setup
-- Update and upgraddes the servve packages.
+- Update and upgrades the server packages.
 - Install basic utilities.
 - Install and configures fail2ban for basic security.
 ### Web Server Setup
